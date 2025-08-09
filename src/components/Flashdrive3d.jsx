@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 
 function FlashDriveModel() {
-  const { scene } = useGLTF("/flashdrive.glb");
+  const gltf = useGLTF(`${import.meta.env.BASE_URL}flashdrive.glb`);
   const [scale, setScale] = useState(2);
 
   useEffect(() => {
