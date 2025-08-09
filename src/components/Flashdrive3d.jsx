@@ -19,7 +19,7 @@ function FlashDriveModel() {
     return () => window.removeEventListener("resize", updateScale);
   }, []);
 
-  return <primitive object={scene} scale={scale} />;
+  return <primitive object={gltf.scene} scale={scale} />;
 }
 
 export default function FlashDrive3D() {
