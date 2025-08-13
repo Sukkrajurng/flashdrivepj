@@ -101,7 +101,7 @@ export default function App() {
           className="w-full max-w-md aspect-video bg-black bg-opacity-70 rounded overflow-hidden mx-auto"
         >
           <iframe
-            src="https://www.youtube.com/embed/27Zu0bOlC9k?si=g2EXRaLHYOsdPvF2"
+            src="https://www.youtube.com/embed/27Zu0bOlC9k?si=ADicX0vT-9-PvCEf"
             title="Flash Drive Demo"
             className="w-full h-full"
             frameBorder="0"
@@ -179,7 +179,7 @@ export default function App() {
           className="absolute bottom-4 left-4 pointer-events-auto w-56 sm:w-80 aspect-video bg-black bg-opacity-70 rounded overflow-hidden"
         >
           <iframe
-            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/27Zu0bOlC9k?si=ADicX0vT-9-PvCEf"
             title="Flash Drive Demo"
             className="w-full h-full"
             frameBorder="0"
