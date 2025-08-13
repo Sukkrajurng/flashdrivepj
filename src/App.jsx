@@ -101,7 +101,7 @@ export default function App() {
           className="w-full max-w-md aspect-video bg-black bg-opacity-70 rounded overflow-hidden mx-auto"
         >
           <iframe
-            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+            src="https://youtu.be/27Zu0bOlC9k?si=OqR7QNxtnV5xDgWL"
             title="Flash Drive Demo"
             className="w-full h-full"
             frameBorder="0"
