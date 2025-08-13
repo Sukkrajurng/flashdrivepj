@@ -14,6 +14,10 @@ const members = [
   "นายพรเอก ปานทอง",
 ];
 
+// 📌 ใช้ตัวแปรเดียวเก็บลิงก์
+const videoUrl =
+  "https://www.youtube.com/embed/27Zu0bOlC9k?si=ADicX0vT-9-PvCEf";
+
 export default function App() {
   return (
     <div className="relative w-screen h-screen bg-black text-white overflow-auto sm:overflow-hidden flex flex-col sm:flex-row items-center sm:justify-center">
@@ -32,9 +36,8 @@ export default function App() {
         </Suspense>
       </div>
 
-      {/* UI มือถือ (visible บนมือถือ) */}
+      {/* UI มือถือ */}
       <div className="sm:hidden z-10 w-full px-6 pt-6 pb-20 space-y-8">
-        {/* ชื่อหัวข้อ */}
         <motion.h1
           initial="hidden"
           animate="visible"
@@ -45,7 +48,6 @@ export default function App() {
           FLASHDRIVE
         </motion.h1>
 
-        {/* ชื่อสมาชิก */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -61,7 +63,6 @@ export default function App() {
           </ul>
         </motion.div>
 
-        {/* คำอธิบาย */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -76,7 +77,6 @@ export default function App() {
           </p>
         </motion.div>
 
-        {/* วิธีใช้งาน */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -92,7 +92,6 @@ export default function App() {
           </ol>
         </motion.div>
 
-        {/* วิดีโอสาธิต */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -101,7 +100,7 @@ export default function App() {
           className="w-full max-w-md aspect-video bg-black bg-opacity-70 rounded overflow-hidden mx-auto"
         >
           <iframe
-            src="https://www.youtube.com/embed/27Zu0bOlC9k?si=ADicX0vT-9-PvCEf"
+            src={videoUrl}
             title="Flash Drive Demo"
             className="w-full h-full"
             frameBorder="0"
@@ -110,9 +109,8 @@ export default function App() {
         </motion.div>
       </div>
 
-      {/* UI Desktop (visible บน desktop) */}
+      {/* UI Desktop */}
       <div className="hidden sm:block z-10">
-        {/* ชื่อสมาชิก ซ้ายบน */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -128,7 +126,6 @@ export default function App() {
           </ul>
         </motion.div>
 
-        {/* ชื่อบนกลาง */}
         <motion.h1
           initial="hidden"
           animate="visible"
@@ -139,7 +136,6 @@ export default function App() {
           FLASHDRIVE
         </motion.h1>
 
-        {/* คำอธิบาย ขวาบน */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -154,7 +150,6 @@ export default function App() {
           </p>
         </motion.div>
 
-        {/* วิธีใช้งาน ขวาล่าง */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -170,7 +165,6 @@ export default function App() {
           </ol>
         </motion.div>
 
-        {/* วิดีโอสาธิต ซ้ายล่าง */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -179,7 +173,7 @@ export default function App() {
           className="absolute bottom-4 left-4 pointer-events-auto w-56 sm:w-80 aspect-video bg-black bg-opacity-70 rounded overflow-hidden"
         >
           <iframe
-            src="https://www.youtube.com/embed/27Zu0bOlC9k?si=ADicX0vT-9-PvCEf"
+            src={videoUrl}
             title="Flash Drive Demo"
             className="w-full h-full"
             frameBorder="0"
